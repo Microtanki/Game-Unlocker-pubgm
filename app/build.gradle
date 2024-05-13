@@ -7,7 +7,7 @@ android {
     buildToolsVersion "33.0.1"
 
     defaultConfig {
-        applicationId "io.github.rushiranpise.gameunlocker"
+        applicationId "io.github.microtanki.pubgmaxfps"
         minSdkVersion 28
         targetSdkVersion 33
         versionCode 4
