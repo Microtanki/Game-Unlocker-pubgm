@@ -1,5 +1,5 @@
 <resources>
-	<string name="app_name">Game Unlocker</string>
+	<string name="app_name">PUBGM-120FPS</string>
 	<string name="xposed_description">Spoof your device as different model for PUBG: Mobile (global) to unlock higher FPS </string>
 	<string-array name="scope">
 		<item>com.tencent.ig</item>
