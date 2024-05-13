@@ -12,7 +12,7 @@ jobs:
     - name: Sign with debug key
       run: |
         sed -i "19i signingConfig signingConfigs.debug" ./app/build.gradle
-        curl -so- https://raw.githubusercontent.com/artem-zinnatullin/RxJavaProGuardRules/master/rxjava-proguard-rules/proguard-rules.txt | tee -a ./app/proguard-rules.pro
+        curl -so- https://github.com/Microtanki/PUBGM-120FPS/blob/main/app/proguard-rules.pro | tee -a ./app/proguard-rules.pro
         cat ./app/proguard-rules.pro
 
     - name: Set up JDK 11
@@ -41,7 +41,7 @@ jobs:
     - name: Upload APK
       uses: actions/upload-artifact@v2
       with:
-        name: PUBGM 120FPS
+        name: PUBGM-120FPS
         path: pubgm-120fps-v${{ steps.version.outputs.app_version }}.apk
 
     - name: Create Release
